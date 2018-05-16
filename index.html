@@ -4,12 +4,25 @@
   <title>Outland Dynamics - Web, App and Game Development</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js">
+  </script>
+  <script>
+  $ (window).scroll(function(){
+    if ($(this).scrollTop()>100){
+      $('.navbar').addClass("sticky");
+    } 
+    else
+    {
+      $('.navbar').removeClass("sticky");
+    }
+  })
+  </script>
 <body>
 <!-- Header Top -->
 <header id="showcase" class="grid">
-
-  <div class="navbar">
-<nav>
+  <div id="navbar">
+<nav class="menu">
   <ul>
     <li><a href="./index.html">Home</li>
       <li><a href="./portfolio.html">Portfolio</li>
